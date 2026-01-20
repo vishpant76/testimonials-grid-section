@@ -25,13 +25,15 @@ body {
   place-items: center;
   /* place-content: center; */
   font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 2rem 0;
 }
 
 .testimonials-page {
   max-width: 70rem;
-  width: 80%;
+  width: 100%;
   display: grid;
   /* place-content: center; */
+  padding: 1.5rem;
   gap: 2rem;
 }
 
@@ -41,6 +43,7 @@ body {
   gap: 1rem;
   border-radius: 0.5rem;
   padding: 2rem 2rem;
+  box-shadow: 0 30px 50px -15px rgba(0, 0, 0, 0.25);
 }
 
 .user-profile {
@@ -133,4 +136,16 @@ body {
 .testimonial-3 .full-testimonial,
 .testimonial-5 .full-testimonial {
   color: var(--grey-400);
+}
+
+.testimonial img {
+  border-radius: 50%;
+}
+
+.testimonial-1 img {
+  border: 2px solid #a775f1;
+}
+
+.testimonial-4 img {
+  border: 2px solid var(--purple-500);
 }
