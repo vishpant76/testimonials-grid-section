@@ -20,6 +20,7 @@
 }
 
 body {
+  background-color: var(--grey-100);
   min-height: 100vh;
   display: grid;
   place-items: center;
