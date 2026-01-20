@@ -23,12 +23,13 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  /* place-content: center; */
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .testimonials-page {
   max-width: 70rem;
-  width: 100%;
+  width: 80%;
   display: grid;
   /* place-content: center; */
   gap: 2rem;
