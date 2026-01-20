@@ -71,6 +71,7 @@ body {
 .testimonial-1 {
   background-color: var(--purple-500);
   color: var(--white);
+  position: relative;
 }
 
 .testimonial-2 {
@@ -139,15 +140,15 @@ body {
   color: var(--grey-400);
 }
 
-.testimonial img {
+.testimonial .profile-img {
   border-radius: 50%;
 }
 
-.testimonial-1 img {
+.testimonial-1 .profile-img {
   border: 2px solid #a775f1;
 }
 
-.testimonial-4 img {
+.testimonial-4 .profile-img {
   border: 2px solid var(--purple-500);
 }
 
@@ -177,6 +178,28 @@ body {
       "testimonial-2 testimonial-3"
       "testimonial-4 testimonial-4"
       "testimonial-5 testimonial-5";
+  }
+
+  .testimonial-1::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+
+    width: 6.5rem;
+    height: 6.5rem;
+
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .testimonial-1 > * {
+    position: relative;
+    z-index: 1;
   }
 }
 
