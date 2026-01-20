@@ -150,3 +150,41 @@ body {
 .testimonial-4 img {
   border: 2px solid var(--purple-500);
 }
+
+@media (min-width: 600px) {
+  .testimonial-1 {
+    grid-area: testimonial-1;
+  }
+  .testimonial-2 {
+    grid-area: testimonial-2;
+  }
+
+  .testimonial-3 {
+    grid-area: testimonial-3;
+  }
+
+  .testimonial-4 {
+    grid-area: testimonial-4;
+  }
+
+  .testimonial-5 {
+    grid-area: testimonial-5;
+  }
+  .testimonials-page {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "testimonial-1 testimonial-1"
+      "testimonial-2 testimonial-3"
+      "testimonial-4 testimonial-4"
+      "testimonial-5 testimonial-5";
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-page {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "testimonial-1 testimonial-1 testimonial-2 testimonial-5"
+      "testimonial-3 testimonial-4 testimonial-4 testimonial-5";
+  }
+}
