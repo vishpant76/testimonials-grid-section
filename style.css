@@ -2,13 +2,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid lightgreen;
+  /* border: 1px solid lightgreen; */
+}
+
+:root {
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-300: #a3aab4;
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
 }
 
 body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .testimonials-page {
@@ -23,6 +38,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
 }
 
 .user-profile {
@@ -34,4 +51,85 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.user-wrapper .user-name {
+  font-size: 0.813rem;
+  line-height: 1.1;
+}
+
+.user-wrapper .user-status {
+  font-size: 0.688rem;
+  line-height: 1.1;
+}
+
+.testimonial-1 {
+  background-color: var(--purple-500);
+  color: var(--white);
+}
+
+.testimonial-2 {
+  background-color: var(--grey-500);
+}
+
+.testimonial-3 {
+  background-color: var(--white);
+}
+
+.testimonial-4 {
+  background-color: var(--dark-blue);
+}
+
+.testimonial-5 {
+  background-color: var(--white);
+}
+
+.key-highlight {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.full-testimonial {
+  font-size: 0.813rem;
+  line-height: 1.4;
+}
+
+.testimonial-1 .user-status,
+.testimonial-1 .full-testimonial {
+  color: var(--purple-50);
+}
+
+.testimonial-2 .user-name,
+.testimonial-2 .key-highlight,
+.testimonial-4 .user-name,
+.testimonial-4 .user-status {
+  color: var(--white);
+}
+
+.testimonial-2 .user-status,
+.testimonial-5 .user-status {
+  color: var(--grey-300);
+}
+
+.testimonial-2 .full-testimonial,
+.testimonial-4 .full-testimonial {
+  color: var(--grey-100);
+}
+
+.testimonial-4 .key-highlight {
+  color: var(--grey-200);
+}
+
+.testimonial-3 .user-name,
+.testimonial-3 .key-highlight,
+.testimonial-5 .user-name,
+.testimonial-5 .key-highlight {
+  color: var(--grey-500);
+}
+
+.testimonial-3 .user-status,
+.testimonial-3 .full-testimonial,
+.testimonial-5 .full-testimonial {
+  color: var(--grey-400);
 }
