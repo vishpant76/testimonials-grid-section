@@ -184,7 +184,7 @@ body {
     content: "";
     position: absolute;
     top: 1.5rem;
-    right: 2rem;
+    right: 8rem;
 
     width: 6.5rem;
     height: 6.5rem;
@@ -209,5 +209,11 @@ body {
     grid-template-areas:
       "testimonial-1 testimonial-1 testimonial-2 testimonial-5"
       "testimonial-3 testimonial-4 testimonial-4 testimonial-5";
+  }
+
+  .testimonial-1::before {
+    content: "";
+    position: absolute;
+    right: 2rem;
   }
 }
